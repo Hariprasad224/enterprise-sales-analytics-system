@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+env/
+venv/
+
+# Streamlit
+.streamlit/
+
+# Data
+data/
+
+# OS
+.DS_Store
