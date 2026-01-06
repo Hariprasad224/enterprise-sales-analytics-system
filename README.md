@@ -1,10 +1,10 @@
-📊 Enterprise Sales Analytics System
+**📊 Enterprise Sales Analytics System**
 
 An end-to-end enterprise-grade sales analytics platform designed to demonstrate business KPI ownership, revenue-driven decision-making, and production-ready analytics engineering — not just SQL queries.
 
 This project simulates how real-world organizations build analytics backends, KPI APIs, and executive dashboards.
 
-🚀 Project Overview
+**🚀 Project Overview**
 
 The Enterprise Sales Analytics System ingests structured sales data, models it into analytical tables, computes business-critical KPIs, exposes them via FastAPI, and visualizes insights through an interactive Streamlit dashboard.
 
@@ -19,25 +19,25 @@ Quarter-over-Quarter (QoQ)
 
 Year-over-Year (YoY)
 
-🛍️ Product Performance
+**🛍️ Product Performance**
 
 Category-wise & Sub-category-wise revenue
 
 Profit contribution by product segment
 
-🌍 Regional Performance
+**🌍 Regional Performance**
 
 Revenue & profit by region
 
 Identification of top-performing regions
 
-💰 Profitability & Discount Impact
+**💰 Profitability & Discount Impact**
 
 Profit margin analysis
 
 Discount band impact on sales, quantity, and profit
 
-📊 Executive Summary KPIs
+**📊 Executive Summary KPIs**
 
 Total Revenue
 
@@ -47,26 +47,7 @@ Total Profit
 
 Top Performing Region
 
-🏗️ System Architecture
-┌──────────────┐
-│   MySQL DB   │
-│ (Fact Tables)│
-└──────┬───────┘
-       │
-       │ SQL / SQLAlchemy
-       ▼
-┌──────────────────┐
-│  FastAPI Backend │
-│  KPI Endpoints   │
-└──────┬───────────┘
-       │ REST APIs
-       ▼
-┌──────────────────┐
-│ Streamlit UI     │
-│ Executive Dash   │
-└──────────────────┘
-
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 🔹 Backend & Data
 
 Python
@@ -95,7 +76,7 @@ API-first analytics design
 
 Clean separation of concerns
 
-📁 Project Structure
+**📁 Project Structure**
 enterprise-sales-analytics-system/
 │
 ├── backend/
@@ -116,7 +97,7 @@ enterprise-sales-analytics-system/
 ├── requirements.txt
 └── README.md
 
-⚙️ Setup Instructions
+**⚙️ Setup Instructions**
 1️⃣ Clone the Repository
 git clone https://github.com/<your-username>/enterprise-sales-analytics-system.git
 cd enterprise-sales-analytics-system
