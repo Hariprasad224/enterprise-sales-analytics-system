@@ -76,27 +76,6 @@ API-first analytics design
 
 Clean separation of concerns
 
-**📁 Project Structure**
-enterprise-sales-analytics-system/
-│
-├── backend/
-│   ├── main.py                # FastAPI entry point
-│   ├── database.py            # DB connection logic
-│   ├── kpi_services.py        # KPI computation layer
-│
-├── frontend/
-│   ├── app.py                 # Streamlit dashboard
-│
-├── db_scripts/
-│   ├── revenue_metrics.sql
-│   ├── product_metrics.sql
-│   ├── discount_analysis.sql
-│
-├── .env.example                # Environment variable template
-├── .gitignore
-├── requirements.txt
-└── README.md
-
 **⚙️ Setup Instructions**
 1️⃣ Clone the Repository
 git clone https://github.com/<your-username>/enterprise-sales-analytics-system.git
