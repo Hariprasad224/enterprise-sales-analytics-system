@@ -2,6 +2,13 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+
+from backend.sql_agent.agent import generate_sql
+from backend.sql_agent.executor import execute_sql
+from backend.sql_agent.prompt import explain_result
+
+
 from .kpi_functions import (
     get_monthly_revenue,
     get_quarterly_revenue,
@@ -60,3 +67,25 @@ def profit_margin_discount():
 @app.get("/kpi-summary")
 def kpi_summary():
     return get_kpi_summary()
+
+# ------------------------------
+# AI Agent Endpoints
+# ------------------------------
+class AskRequest(BaseModel):
+    question: str
+
+@app.post("/ask-ai")
+def ask_ai(request: AskRequest):
+
+    sql = generate_sql(request.question)
+
+    df = execute_sql(sql)
+
+    explanation = explain_result(df)
+
+    return {
+        "question": request.question,
+        "sql": sql,
+        "result": df.to_dict(orient="records"),
+        "explanation": explanation
+    }

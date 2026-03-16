@@ -133,8 +133,8 @@ col4.metric(
 # -------------------------------
 # TABS
 # -------------------------------
-tab1, tab2, tab3, tab4 = st.tabs(
-    ["📈 Revenue Growth", "🛍️ Products", "🌍 Regions", "💰 Discount Impact"]
+tab1, tab2, tab3, tab4, tab5 = st.tabs(
+    ["📈 Revenue Growth", "🛍️ Products", "🌍 Regions", "💰 Discount Impact", "🤖 AI SQL Agent"]
 )
 
 # -------------------------------
@@ -246,3 +246,22 @@ with tab4:
     )
 
     st.plotly_chart(fig, use_container_width=True)
+
+# -------------------------------
+# SQL AGENT
+# -------------------------------
+
+question = st.text_input("Ask business question")
+
+if st.button("Run Query"):
+
+    response = requests.post(
+        f"{API_BASE}/ask-ai",
+        json={"question": question}
+    ).json()
+
+    st.code(response["sql"])
+
+    st.dataframe(response["result"])
+
+    st.success(response["explanation"])
