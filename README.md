@@ -214,3 +214,6 @@ Unsafe operations are blocked:
 ✔️ Interactive BI dashboarding
 ✔️ LLM integration with databases
 ✔️ Natural language analytics workflows
+
+<img width="1827" height="833" alt="image" src="https://github.com/user-attachments/assets/4d429c7a-b02c-4fa0-adfe-fd1763d7a1bb" />
+
