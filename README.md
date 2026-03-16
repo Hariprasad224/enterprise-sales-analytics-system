@@ -1,10 +1,10 @@
-📊 Enterprise Sales Analytics System + AI SQL Agent
+**📊 Enterprise Sales Analytics System + AI SQL Agent**
 
 An end-to-end analytics platform that combines business KPI engineering, API-driven analytics, interactive dashboards, and an AI-powered natural language SQL agent.
 
 This project demonstrates how modern analytics systems are built in production: from raw data → KPI computation → API exposure → dashboard consumption → natural language querying.
 
-🚀 Project Overview
+**🚀 Project Overview**
 
 The system is designed to simulate how enterprises answer business questions through structured analytics and AI-assisted querying.
 
@@ -20,7 +20,7 @@ Natural language to SQL using LLMs
 
 🎯 Goal: Convert raw business data into decision-ready intelligence using SQL, Python, APIs, and GenAI.
 
-🧠 Core Business KPIs
+**🧠 Core Business KPIs**
 📈 Revenue Growth
 
 Month-over-Month (MoM)
@@ -78,7 +78,7 @@ The AI agent performs:
 ✅ Returns result
 ✅ Explains output
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 Backend
 
 Python
@@ -109,7 +109,7 @@ python-dotenv
 
 modular project structure
 
-🔹 Dev Practices
+**🔹 Dev Practices**
 
 .env based secret management
 
